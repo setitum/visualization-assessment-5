@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #e0f2f1;
-    color: #222;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #EBE9E1;
+    color: white;
   }
   
   .container {
@@ -18,11 +18,12 @@ body {
   
   h1 {
     font-size: 48px;
+    color: #123c69;
     margin-bottom: 10px;
   }
   
   .description {
-    background: #fffde7;
+    background: #123c69;
     padding: 15px 20px;
     font-size: 18px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -57,14 +58,14 @@ body {
   
   .text-box {
     flex: 1;
-    background: #fff8dc;
+    background: #123c69;
     padding: 20px;
-    border-left: 4px solid #f4a261;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: white;
   }
 
   .text-container {
@@ -74,12 +75,23 @@ body {
     gap: 40px; /* ⬅️ Adds vertical spacing */
     min-width: 250px;
   }
+
 p
   {
     font-size: 18px;
   }
-/* 🆕 Ensure SVG inside #treemap-chart is centered */
+
 #treemap-chart svg {
     display: block;
     margin: 0 auto;
+  }
+
+.graph-title
+{
+    font-size: 24px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
   }

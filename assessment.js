@@ -41,7 +41,7 @@ var tip = d3.tip()
     .offset([0, -3])
     .direction("e")
     .html(function(d) {
-        return `${d.name}<br/>Twitter Followers: <span style='color:orange'>${formatComma(d.twitter_followers)}</span>`;
+        return `${d.name}<br/>Twitter Followers: <span style='color:#29c5f9'>${formatComma(d.twitter_followers)}</span>`;
     });
 
 mainCanvas.call(tip);
@@ -60,7 +60,7 @@ svg.append("text")
     .attr("class", "graph-title")
     .attr("dy", "10%")
     .attr("y", "10")
-    .attr("x", "280")
+    .attr("x", "210")
     .style("opacity", 0.0)
 
     .transition()
@@ -136,7 +136,7 @@ svg2.append("text")
     .attr("class", "graph-title")
     .attr("dy", "10%")
     .attr("y", "0")
-    .attr("x", 400)
+    .attr("x", 310)
     .style("opacity", 0.0)
     .transition()
     .duration(1000)
