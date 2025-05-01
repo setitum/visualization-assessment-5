@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sports Shoe Brands Statistics</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/d3-tip@0.7.1/index.js"></script>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Caged/d3-tip/master/examples/example-styles.css">
+  <link rel="stylesheet" href="app.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Sports Shoe Brands Statistics</h1>
+      <p class="description">
+        The Sports Shoes Brands dataset contains a simple list of popular sports shoe brands. Specifically, the dataset includes brand names, their webpage, social media links and statistics (Twitter, Instagram, etc.). It also includes other data such as market cap, revenue from different sources, and many more useful insights about each brand.
+      </p>
+    </header>
+
+    <main>
+      <<section class="chart-row">
+        <div class="chart-box" id="bar-chart"></div>
+      
+        <div class="text-container">
+          <div class="text-box">
+            <h2>About the Chart</h2>
+            <p>This chart shows the number of Twitter followers for top sports shoe brands. Nike leads by a significant margin, followed by Adidas and Puma.</p>
+          </div>
+      
+          <div class="text-box">
+            <h2>Where is that dataset from?</h2>
+            <p>This dataset can be found on <a href="https://www.kaggle.com/datasets/igalbronshtein/sports-shoes-brands" target="_blank">Kaggle</a>.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="chart-full">
+        <div class="chart-box" id="treemap-chart"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assessment.js"></script>
+</body>
+</html>
