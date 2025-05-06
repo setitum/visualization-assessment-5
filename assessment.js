@@ -38,7 +38,10 @@ const formatComma = d3.format(",");
 
 var tip = d3.tip()
     .attr("class", "d3-tip")
+    .style("background-color", "#123c69")
     .offset([0, -3])
+    .style("border-radius", "12px")
+    .style("padding", "15px 20px") 
     .direction("e")
     .html(function(d) {
         return `${d.name}<br/>Twitter Followers: <span style='color:#29c5f9'>${formatComma(d.twitter_followers)}</span>`;
@@ -189,7 +192,7 @@ d3.csv('brands.csv', function(d) {
     nodes.append("text")
       .attr("x", 4)
       .attr("y", 14)
-      .style("fill", "black")
+      .style("fill", "white")
       .style("font-size", "12px")
       .text(d => `${d.data.name}: $${d.data.market_cap}B`);
   });
