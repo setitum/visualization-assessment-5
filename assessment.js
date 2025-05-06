@@ -189,7 +189,7 @@ d3.csv('brands.csv', function(d) {
     nodes.append("text")
       .attr("x", 4)
       .attr("y", 14)
-      .style("fill", "white")
+      .style("fill", "black")
       .style("font-size", "12px")
       .text(d => `${d.data.name}: $${d.data.market_cap}B`);
   });
